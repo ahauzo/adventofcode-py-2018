@@ -19,10 +19,10 @@ def reduce(polymer):
 results = {}
 
 inputval = 'dabAcCaCBAcCcaDA'
-print(reduce(inputval))
+print(reduce(inputval))  # part 1
 
 for idx, val in enumerate(['a', 'b', 'c', 'd']):
     results[val] = reduce(inputval.replace(
         val, "").replace(val.swapcase(), ""))
 
-print(min(results.values()))
+print(min(results.values()))  # part 2
